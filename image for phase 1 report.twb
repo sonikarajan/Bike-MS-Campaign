@@ -1,0 +1,810 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 10500.18.0210.2209                               -->
+<workbook original-version='10.5' source-build='10.5.1 (10500.18.0210.2209)' source-platform='win' version='10.5' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='2013-2017 Bike MS Participants' inline='true' name='federated.05k3ybs0uj8lkz1778fiy043znah' version='10.5'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='2013-2017 Bike MS Participants' name='textscan.05badsm002qpoj182fc6k1egfdgg'>
+            <connection class='textscan' directory='C:/Users/sonik/Documents/3. UNCC Spring 2018/6211 - ABA - Reza/Project - Teradata Data Challenge/Participants' filename='2013-2017 Bike MS Participants.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.05badsm002qpoj182fc6k1egfdgg' name='2013-2017 Bike MS Participants.csv' table='[2013-2017 Bike MS Participants#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='Security Category Name' ordinal='0' />
+            <column datatype='integer' name='Fiscal Year' ordinal='1' />
+            <column datatype='string' name='Internal Event Name' ordinal='2' />
+            <column datatype='datetime' name='Event Date' ordinal='3' />
+            <column datatype='string' name='Participation Type Name' ordinal='4' />
+            <column datatype='string' name='Team Name' ordinal='5' />
+            <column datatype='datetime' name='Team Creation Date' ordinal='6' />
+            <column datatype='string' name='Team Division' ordinal='7' />
+            <column datatype='integer' name='Team ID' ordinal='8' />
+            <column datatype='integer' name='Contact ID' ordinal='9' />
+            <column datatype='integer' name='Member ID' ordinal='10' />
+            <column datatype='boolean' name='Participant Accept Email' ordinal='11' />
+            <column datatype='datetime' name='Registration Date' ordinal='12' />
+            <column datatype='string' name='Registration Active Status' ordinal='13' />
+            <column datatype='boolean' name='Is Team Captain' ordinal='14' />
+            <column datatype='boolean' name='Is Secondary Registration' ordinal='15' />
+            <column datatype='string' name='Is Prior Participant' ordinal='16' />
+            <column datatype='integer' name='Emails Sent' ordinal='17' />
+            <column datatype='real' name='Total of All Confirmed Gifts($)' ordinal='18' />
+            <column datatype='real' name='Total From Participant($)' ordinal='19' />
+            <column datatype='real' name='Total Not From Participant($)' ordinal='20' />
+            <column datatype='integer' name='Number From Participant' ordinal='21' />
+            <column datatype='integer' name='Number Not From Participant' ordinal='22' />
+            <column datatype='string' name='Participant Email Status' ordinal='23' />
+            <column datatype='string' name='Participant Employer' ordinal='24' />
+            <column datatype='string' name='Participant Occupation' ordinal='25' />
+            <column datatype='string' name='Participant Connection to MS' ordinal='26' />
+            <column datatype='string' name='Address  -  Participant State/Province' ordinal='27' />
+            <column datatype='string' name='Address  -  Participant County' ordinal='28' />
+            <column datatype='string' name='Address  -  Participant City' ordinal='29' />
+            <column datatype='integer' name='Address -  Participant ZIP/Postal Code' ordinal='30' />
+            <column datatype='string' name='Registration Type' ordinal='31' />
+            <column datatype='integer' name='Event ID' ordinal='32' />
+            <column datatype='string' name='Participant Gender' ordinal='33' />
+            <column datatype='integer' name='Participant Goal($)' ordinal='34' />
+            <column datatype='integer' name='Suggested Participant Goal($)' ordinal='35' />
+            <column datatype='string' name='Source Code Type' ordinal='36' />
+            <column datatype='string' name='Source Code Text' ordinal='37' />
+            <column datatype='string' name='Sub Source Code Text' ordinal='38' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[2013-2017 Bike MS Participants.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Security Category Name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Security Category Name]</local-name>
+            <parent-name>[2013-2017 Bike MS Participants.csv]</parent-name>
+            <remote-alias>Security Category Name</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Fiscal Year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Fiscal Year]</local-name>
+            <parent-name>[2013-2017 Bike MS Participants.csv]</parent-name>
+            <remote-alias>Fiscal Year</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Internal Event Name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Internal Event Name]</local-name>
+            <parent-name>[2013-2017 Bike MS Participants.csv]</parent-name>
+            <remote-alias>Internal Event Name</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Event Date</remote-name>
+            <remote-type>135</remote-type>
+            <local-name>[Event Date]</local-name>
+            <parent-name>[2013-2017 Bike MS Participants.csv]</parent-name>
+            <remote-alias>Event Date</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Participation Type Name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Participation Type Name]</local-name>
+            <parent-name>[2013-2017 Bike MS Participants.csv]</parent-name>
+            <remote-alias>Participation Type Name</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Team Name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Team Name]</local-name>
+            <parent-name>[2013-2017 Bike MS Participants.csv]</parent-name>
+            <remote-alias>Team Name</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Team Creation Date</remote-name>
+            <remote-type>135</remote-type>
+            <local-name>[Team Creation Date]</local-name>
+            <parent-name>[2013-2017 Bike MS Participants.csv]</parent-name>
+            <remote-alias>Team Creation Date</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Team Division</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Team Division]</local-name>
+            <parent-name>[2013-2017 Bike MS Participants.csv]</parent-name>
+            <remote-alias>Team Division</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Team ID</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Team ID]</local-name>
+            <parent-name>[2013-2017 Bike MS Participants.csv]</parent-name>
+            <remote-alias>Team ID</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Contact ID</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Contact ID]</local-name>
+            <parent-name>[2013-2017 Bike MS Participants.csv]</parent-name>
+            <remote-alias>Contact ID</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Member ID</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Member ID]</local-name>
+            <parent-name>[2013-2017 Bike MS Participants.csv]</parent-name>
+            <remote-alias>Member ID</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Participant Accept Email</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[Participant Accept Email]</local-name>
+            <parent-name>[2013-2017 Bike MS Participants.csv]</parent-name>
+            <remote-alias>Participant Accept Email</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Registration Date</remote-name>
+            <remote-type>135</remote-type>
+            <local-name>[Registration Date]</local-name>
+            <parent-name>[2013-2017 Bike MS Participants.csv]</parent-name>
+            <remote-alias>Registration Date</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Registration Active Status</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Registration Active Status]</local-name>
+            <parent-name>[2013-2017 Bike MS Participants.csv]</parent-name>
+            <remote-alias>Registration Active Status</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Is Team Captain</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[Is Team Captain]</local-name>
+            <parent-name>[2013-2017 Bike MS Participants.csv]</parent-name>
+            <remote-alias>Is Team Captain</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Is Secondary Registration</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[Is Secondary Registration]</local-name>
+            <parent-name>[2013-2017 Bike MS Participants.csv]</parent-name>
+            <remote-alias>Is Secondary Registration</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Is Prior Participant</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Is Prior Participant]</local-name>
+            <parent-name>[2013-2017 Bike MS Participants.csv]</parent-name>
+            <remote-alias>Is Prior Participant</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Emails Sent</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Emails Sent]</local-name>
+            <parent-name>[2013-2017 Bike MS Participants.csv]</parent-name>
+            <remote-alias>Emails Sent</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total of All Confirmed Gifts($)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Total of All Confirmed Gifts($)]</local-name>
+            <parent-name>[2013-2017 Bike MS Participants.csv]</parent-name>
+            <remote-alias>Total of All Confirmed Gifts($)</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total From Participant($)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Total From Participant($)]</local-name>
+            <parent-name>[2013-2017 Bike MS Participants.csv]</parent-name>
+            <remote-alias>Total From Participant($)</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total Not From Participant($)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Total Not From Participant($)]</local-name>
+            <parent-name>[2013-2017 Bike MS Participants.csv]</parent-name>
+            <remote-alias>Total Not From Participant($)</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Number From Participant</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Number From Participant]</local-name>
+            <parent-name>[2013-2017 Bike MS Participants.csv]</parent-name>
+            <remote-alias>Number From Participant</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Number Not From Participant</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Number Not From Participant]</local-name>
+            <parent-name>[2013-2017 Bike MS Participants.csv]</parent-name>
+            <remote-alias>Number Not From Participant</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Participant Email Status</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Participant Email Status]</local-name>
+            <parent-name>[2013-2017 Bike MS Participants.csv]</parent-name>
+            <remote-alias>Participant Email Status</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Participant Employer</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Participant Employer]</local-name>
+            <parent-name>[2013-2017 Bike MS Participants.csv]</parent-name>
+            <remote-alias>Participant Employer</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Participant Occupation</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Participant Occupation]</local-name>
+            <parent-name>[2013-2017 Bike MS Participants.csv]</parent-name>
+            <remote-alias>Participant Occupation</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Participant Connection to MS</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Participant Connection to MS]</local-name>
+            <parent-name>[2013-2017 Bike MS Participants.csv]</parent-name>
+            <remote-alias>Participant Connection to MS</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Address  -  Participant State/Province</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Address  -  Participant State/Province]</local-name>
+            <parent-name>[2013-2017 Bike MS Participants.csv]</parent-name>
+            <remote-alias>Address  -  Participant State/Province</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Address  -  Participant County</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Address  -  Participant County]</local-name>
+            <parent-name>[2013-2017 Bike MS Participants.csv]</parent-name>
+            <remote-alias>Address  -  Participant County</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Address  -  Participant City</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Address  -  Participant City]</local-name>
+            <parent-name>[2013-2017 Bike MS Participants.csv]</parent-name>
+            <remote-alias>Address  -  Participant City</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Address -  Participant ZIP/Postal Code</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Address -  Participant ZIP/Postal Code]</local-name>
+            <parent-name>[2013-2017 Bike MS Participants.csv]</parent-name>
+            <remote-alias>Address -  Participant ZIP/Postal Code</remote-alias>
+            <ordinal>30</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Registration Type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Registration Type]</local-name>
+            <parent-name>[2013-2017 Bike MS Participants.csv]</parent-name>
+            <remote-alias>Registration Type</remote-alias>
+            <ordinal>31</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Event ID</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Event ID]</local-name>
+            <parent-name>[2013-2017 Bike MS Participants.csv]</parent-name>
+            <remote-alias>Event ID</remote-alias>
+            <ordinal>32</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Participant Gender</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Participant Gender]</local-name>
+            <parent-name>[2013-2017 Bike MS Participants.csv]</parent-name>
+            <remote-alias>Participant Gender</remote-alias>
+            <ordinal>33</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Participant Goal($)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Participant Goal($)]</local-name>
+            <parent-name>[2013-2017 Bike MS Participants.csv]</parent-name>
+            <remote-alias>Participant Goal($)</remote-alias>
+            <ordinal>34</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Suggested Participant Goal($)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Suggested Participant Goal($)]</local-name>
+            <parent-name>[2013-2017 Bike MS Participants.csv]</parent-name>
+            <remote-alias>Suggested Participant Goal($)</remote-alias>
+            <ordinal>35</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Source Code Type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Source Code Type]</local-name>
+            <parent-name>[2013-2017 Bike MS Participants.csv]</parent-name>
+            <remote-alias>Source Code Type</remote-alias>
+            <ordinal>36</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Source Code Text</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Source Code Text]</local-name>
+            <parent-name>[2013-2017 Bike MS Participants.csv]</parent-name>
+            <remote-alias>Source Code Text</remote-alias>
+            <ordinal>37</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Sub Source Code Text</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Sub Source Code Text]</local-name>
+            <parent-name>[2013-2017 Bike MS Participants.csv]</parent-name>
+            <remote-alias>Sub Source Code Text</remote-alias>
+            <ordinal>38</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='string' name='[Address  -  Participant City]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+      <column datatype='string' name='[Address  -  Participant County]' role='dimension' semantic-role='[County].[Name]' type='nominal' />
+      <column datatype='string' name='[Address  -  Participant State/Province]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column datatype='integer' default-format='*00000' name='[Address -  Participant ZIP/Postal Code]' role='dimension' semantic-role='[ZipCode].[Name]' type='ordinal' />
+      <column datatype='integer' name='[Contact ID]' role='dimension' type='ordinal' />
+      <column datatype='integer' name='[Event ID]' role='dimension' type='ordinal' />
+      <column datatype='integer' name='[Fiscal Year]' role='dimension' type='quantitative' />
+      <column datatype='integer' name='[Member ID]' role='dimension' type='ordinal' />
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column datatype='integer' name='[Team ID]' role='dimension' type='ordinal' />
+      <layout dim-ordering='alphabetic' dim-percentage='0.571429' measure-ordering='alphabetic' measure-percentage='0.428571' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#000000' fontname='Tableau Book' fontsize='12'>Avg Contribution per Member</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='2013-2017 Bike MS Participants' name='federated.05k3ybs0uj8lkz1778fiy043znah' />
+          </datasources>
+          <datasource-dependencies datasource='federated.05k3ybs0uj8lkz1778fiy043znah'>
+            <column caption='SUM([Total of All Confirmed Gifts($)])/COUNT([Member ID])' datatype='real' name='[Calculation_1221038486007955460]' role='measure' type='quantitative' user:unnamed='Sheet 1'>
+              <calculation class='tableau' formula='SUM([Total of All Confirmed Gifts($)])/COUNT([Member ID])' />
+            </column>
+            <column datatype='integer' name='[Member ID]' role='dimension' type='ordinal' />
+            <column datatype='string' name='[Team Division]' role='dimension' type='nominal' />
+            <column datatype='real' name='[Total of All Confirmed Gifts($)]' role='measure' type='quantitative' />
+            <column-instance column='[Member ID]' derivation='Count' name='[cnt:Member ID:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Team Division]' derivation='None' name='[none:Team Division:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Total of All Confirmed Gifts($)]' derivation='Sum' name='[sum:Total of All Confirmed Gifts($):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_1221038486007955460]' derivation='User' name='[usr:Calculation_1221038486007955460:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.05k3ybs0uj8lkz1778fiy043znah].[usr:Calculation_1221038486007955460:qk]' scope='rows' value='Average Contribution' />
+            <format attr='subtitle' class='0' field='[federated.05k3ybs0uj8lkz1778fiy043znah].[usr:Calculation_1221038486007955460:qk]' scope='rows' value='' />
+            <format attr='auto-subtitle' class='0' field='[federated.05k3ybs0uj8lkz1778fiy043znah].[usr:Calculation_1221038486007955460:qk]' scope='rows' value='true' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.05k3ybs0uj8lkz1778fiy043znah].[none:Team Division:nk]' value='123' />
+          </style-rule>
+          <style-rule element='field-labels-decoration'>
+            <format attr='text-align' value='auto' />
+            <format attr='vertical-align' value='auto' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='3' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <lod column='[federated.05k3ybs0uj8lkz1778fiy043znah].[sum:Total of All Confirmed Gifts($):qk]' />
+              <lod column='[federated.05k3ybs0uj8lkz1778fiy043znah].[cnt:Member ID:qk]' />
+              <text column='[federated.05k3ybs0uj8lkz1778fiy043znah].[usr:Calculation_1221038486007955460:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run>&lt;</run>
+                <run>[federated.05k3ybs0uj8lkz1778fiy043znah].[usr:Calculation_1221038486007955460:qk]</run>
+                <run>&gt;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='size' value='0.80160218477249146' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.05k3ybs0uj8lkz1778fiy043znah].[usr:Calculation_1221038486007955460:qk]</rows>
+        <cols>[federated.05k3ybs0uj8lkz1778fiy043znah].[none:Team Division:nk]</cols>
+      </table>
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='200'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.05k3ybs0uj8lkz1778fiy043znah].[none:Member ID:ok]</field>
+            <field>[federated.05k3ybs0uj8lkz1778fiy043znah].[none:Team Division:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Sheet 1' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>
